@@ -1,0 +1,13 @@
+E:\Unity\Atividades OO\Lista3\Lista3\Lista3\bin\Debug\netcoreapp3.1\Lista3.exe
+E:\Unity\Atividades OO\Lista3\Lista3\Lista3\bin\Debug\netcoreapp3.1\Lista3.deps.json
+E:\Unity\Atividades OO\Lista3\Lista3\Lista3\bin\Debug\netcoreapp3.1\Lista3.runtimeconfig.json
+E:\Unity\Atividades OO\Lista3\Lista3\Lista3\bin\Debug\netcoreapp3.1\Lista3.runtimeconfig.dev.json
+E:\Unity\Atividades OO\Lista3\Lista3\Lista3\bin\Debug\netcoreapp3.1\Lista3.dll
+E:\Unity\Atividades OO\Lista3\Lista3\Lista3\bin\Debug\netcoreapp3.1\Lista3.pdb
+E:\Unity\Atividades OO\Lista3\Lista3\Lista3\obj\Debug\netcoreapp3.1\Lista3.csprojAssemblyReference.cache
+E:\Unity\Atividades OO\Lista3\Lista3\Lista3\obj\Debug\netcoreapp3.1\Lista3.AssemblyInfoInputs.cache
+E:\Unity\Atividades OO\Lista3\Lista3\Lista3\obj\Debug\netcoreapp3.1\Lista3.AssemblyInfo.cs
+E:\Unity\Atividades OO\Lista3\Lista3\Lista3\obj\Debug\netcoreapp3.1\Lista3.csproj.CoreCompileInputs.cache
+E:\Unity\Atividades OO\Lista3\Lista3\Lista3\obj\Debug\netcoreapp3.1\Lista3.dll
+E:\Unity\Atividades OO\Lista3\Lista3\Lista3\obj\Debug\netcoreapp3.1\Lista3.pdb
+E:\Unity\Atividades OO\Lista3\Lista3\Lista3\obj\Debug\netcoreapp3.1\Lista3.genruntimeconfig.cache
