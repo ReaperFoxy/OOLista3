@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Diagnostics;
 
 namespace Lista3
 {
@@ -12,11 +14,18 @@ namespace Lista3
                 "praticada dentro de limites espaciais e temporais próprios, segundo uma certa ordem e certas regras. Promove a formação de grupos sociais com tendência " +
                 "a rodearem-se de segredo e a sublinharem sua diferença em relação ao resto do mundo por meio de disfarces ou outros meios semelhantes.";
 
+            string expressaoCerta = "1 + (5 + 3 - (8 - 5) * 4 - ((3 + 7) * (3 - 1)))";
+            string expressaoErrada = "1 + (5 + 3 - (8 - 5) * 4 - ((3 + 7) * (3 - 1))))";
 
 
             Console.WriteLine("Palavras no texto: " + VerificarQuantidadePalavras(texto));
             Console.WriteLine("Palavras diferentes no texto: " + VerificarQuantidadePalavrasDiferentes(texto));
             VerificarPalavrasRepetidas(texto);
+            Console.WriteLine("------------------------------------------");
+            Console.WriteLine($"Validação da expressão {expressaoCerta}: "+ValidarExpressoesMatematicas(expressaoCerta));
+            Console.WriteLine($"Validação da expressão {expressaoErrada}: " + ValidarExpressoesMatematicas(expressaoErrada));
+
+
         }
 
         static int VerificarQuantidadePalavras(string texto)
@@ -89,6 +98,41 @@ namespace Lista3
             }
 
 
+        }
+        static bool ValidarExpressoesMatematicas(string expressao)
+        {
+            Stack<char> stack = new Stack<char>();
+            for (int i = 0; i < expressao.Length; i++)
+            {
+                char parenteses  = expressao[i];
+                if (parenteses  == '[' || parenteses  == '{' || parenteses  == '(')
+                    stack.Push(parenteses );
+                else if (parenteses  == ']' || parenteses  == '}' || parenteses  == ')')
+                {
+                    if (!stack.Any())
+                        return false;
+                    switch (parenteses )
+                    {
+                        case ']':
+                            if (stack.Pop() != '[')
+                                return false;
+                            break;
+                        case '}':
+                            if (stack.Pop() != '{')
+                                return false;
+                            break;
+                        case ')':
+                            if (stack.Pop() != '(')
+                                return false;
+                            break;
+                        default:
+                            break;
+                    }
+                }
+            }
+            if (!stack.Any())
+                return true;
+            return false;
         }
     }
 }
